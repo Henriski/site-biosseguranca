@@ -95,7 +95,7 @@ header {
 }
 
 .hero-container img {
-  max-width: 500px;
+  max-width: 400px;
   width: 100%;
   border-radius: 10px;
   object-fit: cover;
@@ -300,7 +300,7 @@ footer {
   }
 
   .hero-container img {
-    max-height: 300px;
+    max-height: 400px;
   }
 
   .hero-text {
