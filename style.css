@@ -17,13 +17,13 @@ html {
 body {
   padding-top: 100px;
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Amalfi Coast', cursive;
   background-color: var(--rosé);
   color: var(--text);
 }
 
 h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Amalfi Coast', cursive;
   color: var(--primary);
 }
 
