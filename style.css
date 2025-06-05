@@ -27,6 +27,20 @@ h1, h2, h3 {
   color: var(--primary);
 }
 
+#sobre h2,
+#medidas h2,
+#carousel h2 {
+  text-align: center;
+  margin-right: 2rem;
+}
+
+#sobre p {
+  text-align: center;
+  margin: 1rem auto;
+  max-width: 90%;
+  padding: 0 1rem;
+}
+
 header {
   background-color: #fffbf5;
   padding: 1rem 2rem;
@@ -91,7 +105,7 @@ header {
   flex-wrap: wrap;
   max-width: 1200px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .hero-container img {
@@ -100,13 +114,15 @@ header {
   border-radius: 10px;
   object-fit: cover;
   max-height: 400px;
+  order: -1;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
+  flex: 1;
 }
 
 .hero-text h2 {
@@ -248,7 +264,28 @@ section {
   background-color: #a04155;
 }
 
+.dicas {
+  padding: 3rem 2rem;
+  scroll-margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.dicas img {
+  max-width: 400px;
+  width: 45%;
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 400px;
+}
+
 .checklist {
+  flex: 1;
   list-style: none;
   padding: 0;
   line-height: 1.8;
@@ -279,8 +316,29 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .dicas {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .dicas h1 {
+    text-align: left;
+
+  }
+
+  .dicas img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .checklist {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
   body {
-    padding-top: 140px;
+    padding-top: 120px;
   }
 
   .nav-menu {
@@ -289,7 +347,7 @@ footer {
   }
 
   .hero {
-    margin-top: 40px;
+    margin-top: 100px;
     padding: 3rem 1rem;
   }
 
@@ -304,7 +362,7 @@ footer {
   }
 
   .hero-text {
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
   }
 
@@ -328,7 +386,7 @@ footer {
   }
 
   .logo-img {
-    width: 120px;
+    width: 200px;
   }
 
   .carousel-section {
